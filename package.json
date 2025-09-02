@@ -1,0 +1,17 @@
+{
+  "name": "lab3",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "ganache-cli": "^6.12.2",
+    "mocha": "^11.6.0",
+    "solc": "^0.8.30",
+    "web3": "^1.10.4"
+  }
+}
