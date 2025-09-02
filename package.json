@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "test": "mocha",
+    "pretest": "mkdir -p test-results",
+    "test": "mocha \"test/**/*.js\" --reporter mocha-junit-reporter --reporter-options mochaFile=test-results/junit.xml",
     "build": "node compile.js"
   },
   "author": "",
@@ -11,8 +12,11 @@
   "description": "",
   "dependencies": {
     "ganache-cli": "^6.12.2",
-    "mocha": "^11.6.0",
     "solc": "^0.8.30",
     "web3": "^1.10.4"
+  },
+  "devDependencies": {
+    "mocha": "^11.7.2",
+    "mocha-junit-reporter": "^2.2.1"
   }
 }
